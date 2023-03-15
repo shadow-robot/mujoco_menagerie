@@ -6,7 +6,7 @@
   <default>
     <default class="right_hand">
       <mesh scale="0.001 0.001 0.001"/>
-      <joint axis="1 0 0" damping="0.05" armature="0.0002" frictionloss="0.01"/>
+      <joint axis="1 0 0" damping="0.05" armature="0.0002" frictionloss="0.01" limited="true"/>
       <position forcerange="-1 1"/>
 
       <default class="wrist">
@@ -78,19 +78,19 @@
     <material name="gray" specular="0.0" shininess="0.25" rgba="0.80848 0.80848 0.80848 1"/>
     <material name="metallic" specular="0" shininess="0.25" rgba="0.9 0.9 0.9 1"/>
 
-    <mesh class="right_hand" file="forearm_0.obj"/>
-    <mesh class="right_hand" file="forearm_1.obj"/>
-    <mesh class="right_hand" file="forearm_collision.obj"/>
-    <mesh class="right_hand" file="wrist.obj"/>
-    <mesh class="right_hand" file="palm.obj"/>
-    <mesh class="right_hand" file="f_knuckle.obj"/>
-    <mesh class="right_hand" file="f_proximal.obj"/>
-    <mesh class="right_hand" file="f_middle.obj"/>
-    <mesh class="right_hand" file="f_distal_pst.obj"/>
-    <mesh class="right_hand" file="lf_metacarpal.obj"/>
-    <mesh class="right_hand" file="th_proximal.obj"/>
-    <mesh class="right_hand" file="th_middle.obj"/>
-    <mesh class="right_hand" file="th_distal_pst.obj"/>
+    <mesh class="right_hand" scale="0.001 0.001 0.001" name="forearm_0"         file="forearm_0.obj" />
+    <mesh class="right_hand" scale="0.001 0.001 0.001" name="forearm_1"         file="forearm_1.obj" />
+    <mesh class="right_hand" scale="0.001 0.001 0.001" name="forearm_collision" file="forearm_collision.obj" />
+    <mesh class="right_hand" scale="0.001 0.001 0.001" name="wrist"             file="wrist.obj"/>
+    <mesh class="right_hand" scale="0.001 0.001 0.001" name="palm"              file="palm.obj"/>
+    <mesh class="right_hand" scale="0.001 0.001 0.001" name="f_knuckle"         file="f_knuckle.obj" />
+    <mesh class="right_hand" scale="0.001 0.001 0.001" name="f_proximal"        file="f_proximal.obj" />
+    <mesh class="right_hand" scale="0.001 0.001 0.001" name="f_middle"          file="f_middle.obj" />
+    <mesh class="right_hand" scale="0.001 0.001 0.001" name="f_distal_pst"      file="f_distal_pst.obj" />
+    <mesh class="right_hand" scale="0.001 0.001 0.001" name="lf_metacarpal"     file="lf_metacarpal.obj"/>
+    <mesh class="right_hand" scale="0.001 0.001 0.001" name="th_proximal"       file="th_proximal.obj" />
+    <mesh class="right_hand" scale="0.001 0.001 0.001" name="th_middle"         file="th_middle.obj" />
+    <mesh class="right_hand" scale="0.001 0.001 0.001" name="th_distal_pst"     file="th_distal_pst.obj" />
   </asset>
 
   <worldbody>
