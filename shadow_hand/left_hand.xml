@@ -7,7 +7,7 @@
     <default class="left_hand">
       <mesh scale="0.001 0.001 0.001"/>
       <joint axis="1 0 0" damping="0.05" armature="0.0002" frictionloss="0.01" limited="true"/>
-      <position forcerange="-1 1"/>
+      <position forcerange="-1 1" kp="1"/>
 
       <default class="wrist">
         <joint damping="0.5"/>
@@ -24,23 +24,23 @@
       <default class="thumb">
         <default class="thbase">
           <joint axis="0 0 1" range="-1.0472 1.0472"/>
-          <position kp="0.4" ctrlrange="-1.0472 1.0472" forcerange="-3 3"/>
+          <position kp="1" ctrlrange="-1.0472 1.0472" forcerange="-3 3"/>
         </default>
         <default class="thproximal">
           <joint axis="-1 0 0" range="0 1.22173"/>
-          <position ctrlrange="0 1.22173" forcerange="-2 2"/>
+          <position kp="1" ctrlrange="0 1.22173" forcerange="-2 2"/>
         </default>
         <default class="thhub">
           <joint axis="-1 0 0" range="-0.20944 0.20944"/>
-          <position kp="0.5" ctrlrange="-0.20944 0.20944"/>
+          <position kp="1" ctrlrange="-0.20944 0.20944"/>
         </default>
         <default class="thmiddle">
           <joint axis="0 -1 0" range="-0.698132 0.698132"/>
-          <position kp="1.5" ctrlrange="-0.698132 0.698132"/>
+          <position kp="1.0" ctrlrange="-0.698132 0.698132"/>
         </default>
         <default class="thdistal">
           <joint range="-0.261799 1.5708"/>
-          <position ctrlrange="-0.261799 1.5708"/>
+          <position kp="1" ctrlrange="-0.261799 1.5708"/>
         </default>
       </default>
 
@@ -303,19 +303,19 @@
 
   <tendon>
     <fixed name="lh_FFJ0">
-      <joint joint="lh_FFJ2" coef="1"/>
+      <joint joint="lh_FFJ2" coef="-1"/>
       <joint joint="lh_FFJ1" coef="1"/>
     </fixed>
     <fixed name="lh_MFJ0">
-      <joint joint="lh_MFJ2" coef="1"/>
+      <joint joint="lh_MFJ2" coef="-1"/>
       <joint joint="lh_MFJ1" coef="1"/>
     </fixed>
     <fixed name="lh_RFJ0">
-      <joint joint="lh_RFJ2" coef="1"/>
+      <joint joint="lh_RFJ2" coef="-1"/>
       <joint joint="lh_RFJ1" coef="1"/>
     </fixed>
     <fixed name="lh_LFJ0">
-      <joint joint="lh_LFJ2" coef="1"/>
+      <joint joint="lh_LFJ2" coef="-1"/>
       <joint joint="lh_LFJ1" coef="1"/>
     </fixed>
   </tendon>
@@ -330,16 +330,16 @@
     <position name="lh_A_THJ1" joint="lh_THJ1" class="thdistal"/>
     <position name="lh_A_FFJ4" joint="lh_FFJ4" class="knuckle"/>
     <position name="lh_A_FFJ3" joint="lh_FFJ3" class="proximal"/>
-    <position name="lh_A_FFJ0" tendon="lh_FFJ0" class="middle_distal"/>
+    <position name="lh_A_FFJ2" joint="lh_FFJ2" class="middle_distal"/>
     <position name="lh_A_MFJ4" joint="lh_MFJ4" class="knuckle"/>
     <position name="lh_A_MFJ3" joint="lh_MFJ3" class="proximal"/>
-    <position name="lh_A_MFJ0" tendon="lh_MFJ0" class="middle_distal"/>
+    <position name="lh_A_MFJ2" joint="lh_MFJ2" class="middle_distal"/>
     <position name="lh_A_RFJ4" joint="lh_RFJ4" class="knuckle"/>
     <position name="lh_A_RFJ3" joint="lh_RFJ3" class="proximal"/>
-    <position name="lh_A_RFJ0" tendon="lh_RFJ0" class="middle_distal"/>
+    <position name="lh_A_RFJ2" joint="lh_RFJ2" class="middle_distal"/>
     <position name="lh_A_LFJ5" joint="lh_LFJ5" class="metacarpal"/>
     <position name="lh_A_LFJ4" joint="lh_LFJ4" class="knuckle"/>
     <position name="lh_A_LFJ3" joint="lh_LFJ3" class="proximal"/>
-    <position name="lh_A_LFJ0" tendon="lh_LFJ0" class="middle_distal"/>
+    <position name="lh_A_LFJ2" joint="lh_LFJ2" class="middle_distal"/>
   </actuator>
 </mujoco>
