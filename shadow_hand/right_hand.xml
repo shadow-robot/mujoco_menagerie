@@ -266,9 +266,8 @@
                   <inertial mass="0.02" pos="0 0 0.016" diaginertia="5.1e-06 5.1e-06 1.21e-06"/>
                   <joint name="rh_THJ2" class="thmiddle"/>
                   <geom class="plastic_visual" mesh="th_middle"/>
-                  <geom size="0.009 0.009" pos="0 0 0.012" type="capsule"
-                      class="plastic_collision"/>
-                  <geom size="0.01" pos="0 0 0.03" class="plastic_collision"/>
+                  <geom name="Rh_thmiddle_C_0" size="0.009 0.009" pos="0 0 0.012" type="capsule" class="plastic_collision"/>
+                  <geom name="Rh_thmiddle_C_1" size="0.01" pos="0 0 0.03" class="plastic_collision"/>
                   <body name="rh_thdistal" pos="0 0 0.032" quat="1 0 0 -1">
                     <inertial mass="0.017" pos="0 0 0.0145588" quat="1 0 0 1"
                         diaginertia="2.37794e-06 2.27794e-06 1e-06"/>
